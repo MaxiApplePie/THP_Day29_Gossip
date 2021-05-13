@@ -1,0 +1,35 @@
+<div class="container p-5" style="min-height:600px">
+      <h3 class="card-title text-center m-4">Sign up</h3>
+
+            <!-- Zone du formulaire -->
+            <%= form_tag url_for(action: "create"), method: "post" do %>
+            <%= label_tag "First Name" %>
+            <%= text_field_tag "first_name", nil, class: "form-control mb-3", required: true %>
+
+            <%= label_tag "Last Name" %>
+            <%= text_field_tag "last_name", nil, class: "form-control mb-3", required: true %>
+
+            <%= label_tag "Description" %>
+            <%= text_area_tag "description", nil, class: "form-control mb-3", required: true %>
+
+            <%= label_tag "Email" %>
+            <%= text_field_tag "email", nil, class: "form-control mb-3", required: true %>
+
+            <%= label_tag "Age" %>
+            <%= text_field_tag "age", nil, class: "form-control mb-3", required: true %>
+
+            <%= label_tag "City" %>
+            <%= text_field_tag "city", nil, class: "form-control mb-3", required: true %>
+
+            <%= label_tag "Zip Code" %>
+            <%= text_field_tag "zip_code", nil, class: "form-control mb-3", required: true %>
+
+            <%= label_tag "Password" %>
+            <%= password_field_tag "password", nil, class: "form-control mb-3", required: true %>
+
+            <%= label_tag "Confirm passord" %>
+            <%= password_field_tag "password_confirmation", nil, class: "form-control mb-3", required: true %>
+
+            <%= submit_tag "Sign up", class: "btn btn-primary" %>
+<% end %>
+</div>

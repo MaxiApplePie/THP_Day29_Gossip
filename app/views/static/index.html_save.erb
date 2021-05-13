@@ -1,0 +1,84 @@
+    <div class="container text-center">    
+      <% flash.each do |type, msg| %>
+      <div class="alert alert-warning">
+          <%= msg %>
+        </div>
+      <% end %>
+      <div class="row">
+        <div class="col-sm-3 well">
+          <div class="well">
+            <p><a href="#">My Profile</a></p>
+            <img src="https://live.paloaltonetworks.com/t5/image/serverpage/image-id/16661iE57B78E379CA8022/image-size/large/is-moderation-mode/true?v=v2&px=999" class="img-circle" height="100" width="100" alt="Avatar">
+          </div>
+          <div class="well">
+            <p><a href="#">Interests</a></p>
+            <p>
+              <span class="label label-default">Ruby</span>
+              <span class="label label-primary">THP</span>
+              <span class="label label-success">CSGO</span>
+              <span class="label label-info">Football</span>
+              <span class="label label-warning">Gaming</span>
+              <span class="label label-danger">Friends</span>
+            </p>
+          </div>
+          <div class="alert alert-success fade in">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+            <p><strong>Ey!</strong></p>
+            People are looking at your profile. Find out who.
+          </div>
+          <p><a href="#">Link</a></p>
+          <p><a href="#">Link</a></p>
+          <p><a href="#">Link</a></p>
+        </div>
+        <div class="col-sm-7">
+        
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="panel panel-default text-left">
+                <div class="panel-body">
+                  <p contenteditable="true">Liste de potins</p>
+                  <button type="button" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-thumbs-up"></span> Like
+                  </button>     
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="list-group">
+            <% @gossips.each do |g| %>
+                
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="well">
+                  <p><a href="<%= gossip_path(g.id) %>" class="list-group-item list-group-item-action">by <%= g.user.first_name %>, click here</a></p>
+                  </div>
+                </div>
+                <div class="col-sm-9">
+                  <div class="well">
+                    <p>Title : <%= g.title %></p>
+                    <a href="<%= gossip_path(g.id) %>" class="btn" data-confirm="êtes-vous sur?" data-method="DELETE">Supprimer le gossip</a>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        </div>  
+
+        <div class="col-sm-2 well">
+          <div class="thumbnail">
+            <p>Upcoming Events:</p>
+            <img src="https://3.bp.blogspot.com/-6EPkmQiNJy8/WU_chFax0HI/AAAAAAAAqMQ/Q2vZ1ZH4J18fb7Pp5Yr_gy2roaAeweuBACLcBGAs/s280/Arena%2Bdo%2BTorneio%2Bdo%2BPoder.png" alt="Paris" width="400" height="300">
+            <p><strong>Paris</strong></p>
+            <p>Fri. 27 November 2022</p>
+            <button class="btn btn-primary">Info</button>
+          </div>      
+          <div class="well">
+            <p>ADS</p>
+          </div>
+          <div class="well">
+            <p>ADS</p>
+          </div>
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,19 @@
+<div class="container m-5"  style="min-height:600px">
+  <div class="row justify-content-md-center">
+  <div class="col col-lg-3">
+  <%= form_tag url_for(action: "create"), method: "post" do %>
+      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+      <label for="email" class="sr-only">Email address</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Email address" required autofocus>
+      <label for="password" class="sr-only">Password</label>
+      <input type="password"  name="password" id="password" class="form-control" placeholder="Password" required>
+      <div class="checkbox mb-3">
+      </div>
+<%= submit_tag "Log in" %>
+        <% end %>
+    </div>
+    </div>
+    </div>
+    
+
+    

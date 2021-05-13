@@ -1,0 +1,44 @@
+    
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4">A vous de jouer</h1>
+      <p class="lead">Racontez nous ..</p>
+    </div>
+
+    <div class="container p-5" style="min-height:600px">
+    <!-- ... -->
+    <%= form_tag url_for(action: "create"), method: "post" do |f| %>
+    <div class="form-group row">
+      <div class="col-sm-2 col-form-label">
+        <%= label_tag "Title" %>
+        <div class="col-sm-10">
+          <%= text_field_tag "title", @gossip.title, required: true %>
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-2 col-form-label">
+      <%= label_tag "Content" %>
+        <div class="col-sm-10">
+        <%= text_area_tag "content", @gossip.content, required: true %>
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-2 col-form-label">
+        <%= submit_tag "Create Post" %>
+      </div>
+    </div>
+    <% end %>
+    <% if @gossip.errors.any? %>
+    <p>Nous n'avons pas réussi à créer le potin pour la (ou les) raison(s) suivante(s) :</p>
+    <ul>
+      <% @gossip.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+    <% end %>
+
+    </div>
+
+
+
