@@ -19,7 +19,7 @@ class UsersController < ApplicationController
         description: params[:description],
         email: params[:email],
         age: params[:age],
-        city_id: 27, #City.find_by(name: params[:city]).id,
+        city_id: City.all.sample.id, #City.find_by(name: params[:city]).id,
         password: params[:password],
       )
       if @user.save

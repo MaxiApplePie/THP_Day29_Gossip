@@ -1,0 +1,2060 @@
+Started GET "/" for 127.0.0.1 at 2021-05-13 19:36:55 +0200
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "Gossip_J28_development" does not exist
+):
+  
+activerecord (5.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:696:in `rescue in connect'
+activerecord (5.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:691:in `connect'
+activerecord (5.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+activerecord (5.2.6) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.6) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.6) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (90.3ms)[0m  [1m[35mCREATE DATABASE "Gossip_J28_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (90.8ms)[0m  [1m[35mCREATE DATABASE "Gossip_J28_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2021-05-13 19:39:23 +0200
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.6) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2021-05-13 19:39:24 +0200
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.6) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2021-05-13 19:39:25 +0200
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.6) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (8.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8310072028625298750)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20210512070641)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "description" character varying, "email" character varying, "age" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210512070641_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210512070641"]]
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateCities (20210512070657)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "cities" ("id" bigserial primary key, "name" character varying, "zip_code" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210512070657_create_cities.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210512070657"]]
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateGossips (20210512070707)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "gossips" ("id" bigserial primary key, "title" character varying, "content" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210512070707_create_gossips.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210512070707"]]
+  ↳ bin/rails:9
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateTags (20210512070719)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "tags" ("id" bigserial primary key, "title" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210512070719_create_tags.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210512070719"]]
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreatePrivateMessages (20210512070725)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "private_messages" ("id" bigserial primary key, "content" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210512070725_create_private_messages.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210512070725"]]
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateLinkGossipTags (20210512070732)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "link_gossip_tags" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210512070732_create_link_gossip_tags.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210512070732"]]
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateComments (20210512070740)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "comments" ("id" bigserial primary key, "content" text, "user_id" bigint, "gossip_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_03de2dc08c"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_0a34ec365a"
+FOREIGN KEY ("gossip_id")
+  REFERENCES "gossips" ("id")
+)[0m
+  ↳ db/migrate/20210512070740_create_comments.rb:3
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE  INDEX  "index_comments_on_user_id" ON "comments"  ("user_id")[0m
+  ↳ db/migrate/20210512070740_create_comments.rb:3
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE  INDEX  "index_comments_on_gossip_id" ON "comments"  ("gossip_id")[0m
+  ↳ db/migrate/20210512070740_create_comments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210512070740"]]
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateLikes (20210512070749)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "likes" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210512070749_create_likes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210512070749"]]
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddFKs1 (20210512075502)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "city_id" bigint[0m
+  ↳ db/migrate/20210512075502_add_f_ks1.rb:3
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE  INDEX  "index_users_on_city_id" ON "users"  ("city_id")[0m
+  ↳ db/migrate/20210512075502_add_f_ks1.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD CONSTRAINT "fk_rails_9c7442481a"
+FOREIGN KEY ("city_id")
+  REFERENCES "cities" ("id")
+[0m
+  ↳ db/migrate/20210512075502_add_f_ks1.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210512075502"]]
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddFKs2 (20210512081156)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "gossips" ADD "user_id" bigint[0m
+  ↳ db/migrate/20210512081156_add_f_ks2.rb:3
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE  INDEX  "index_gossips_on_user_id" ON "gossips"  ("user_id")[0m
+  ↳ db/migrate/20210512081156_add_f_ks2.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "gossips" ADD CONSTRAINT "fk_rails_9e6296a836"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  ↳ db/migrate/20210512081156_add_f_ks2.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "link_gossip_tags" ADD "tag_id" bigint[0m
+  ↳ db/migrate/20210512081156_add_f_ks2.rb:4
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE  INDEX  "index_link_gossip_tags_on_tag_id" ON "link_gossip_tags"  ("tag_id")[0m
+  ↳ db/migrate/20210512081156_add_f_ks2.rb:4
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "link_gossip_tags" ADD CONSTRAINT "fk_rails_093e110f77"
+FOREIGN KEY ("tag_id")
+  REFERENCES "tags" ("id")
+[0m
+  ↳ db/migrate/20210512081156_add_f_ks2.rb:4
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "link_gossip_tags" ADD "gossip_id" bigint[0m
+  ↳ db/migrate/20210512081156_add_f_ks2.rb:5
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE  INDEX  "index_link_gossip_tags_on_gossip_id" ON "link_gossip_tags"  ("gossip_id")[0m
+  ↳ db/migrate/20210512081156_add_f_ks2.rb:5
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "link_gossip_tags" ADD CONSTRAINT "fk_rails_75c8d67729"
+FOREIGN KEY ("gossip_id")
+  REFERENCES "gossips" ("id")
+[0m
+  ↳ db/migrate/20210512081156_add_f_ks2.rb:5
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210512081156"]]
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddLinkPm (20210512091322)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "private_messages" ADD "recipient_id" bigint[0m
+  ↳ db/migrate/20210512091322_add_link_pm.rb:3
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE  INDEX  "index_private_messages_on_recipient_id" ON "private_messages"  ("recipient_id")[0m
+  ↳ db/migrate/20210512091322_add_link_pm.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "private_messages" ADD CONSTRAINT "fk_rails_b7df49575c"
+FOREIGN KEY ("recipient_id")
+  REFERENCES "users" ("id")
+[0m
+  ↳ db/migrate/20210512091322_add_link_pm.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "private_messages" ADD "sender_id" bigint[0m
+  ↳ db/migrate/20210512091322_add_link_pm.rb:4
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE  INDEX  "index_private_messages_on_sender_id" ON "private_messages"  ("sender_id")[0m
+  ↳ db/migrate/20210512091322_add_link_pm.rb:4
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "private_messages" ADD CONSTRAINT "fk_rails_747f84c937"
+FOREIGN KEY ("sender_id")
+  REFERENCES "users" ("id")
+[0m
+  ↳ db/migrate/20210512091322_add_link_pm.rb:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210512091322"]]
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddPassword (20210513081429)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "password_digest" character varying[0m
+  ↳ db/migrate/20210513081429_add_password.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210513081429"]]
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-05-13 17:39:39.428790"], ["updated_at", "2021-05-13 17:39:39.428790"]]
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(8310072028625298750)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2021-05-13 19:40:04 +0200
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/maxiapplepie/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/static/index.html.erb:15
+  Rendered static/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 167ms (Views: 152.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2021-05-13 19:40:08 +0200
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.2ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/static/index.html.erb:15
+  Rendered static/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2021-05-13 19:40:11 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2021-05-13 19:40:13 +0200
+Processing by StaticController#contact as HTML
+  Rendering static/contact.html.erb within layouts/application
+  Rendered static/contact.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2021-05-13 19:40:14 +0200
+Processing by StaticController#team as HTML
+  Rendering static/team.html.erb within layouts/application
+  Rendered static/team.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2021-05-13 19:40:17 +0200
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/static/index.html.erb:15
+  Rendered static/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/index" for 127.0.0.1 at 2021-05-13 19:40:40 +0200
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/maxiapplepie/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/static/index.html.erb:15
+  Rendered static/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 104ms (Views: 96.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2021-05-13 19:40:41 +0200
+Processing by StaticController#team as HTML
+  Rendering static/team.html.erb within layouts/application
+  Rendered static/team.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2021-05-13 19:40:43 +0200
+Processing by StaticController#contact as HTML
+  Rendering static/contact.html.erb within layouts/application
+  Rendered static/contact.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 22ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2021-05-13 19:40:44 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2021-05-13 19:40:45 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2021-05-13 19:40:51 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-05-13 19:41:23 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fvSOF2vpxM7tpfEiexTiBwPcqqWAKKKVwQu+9h2Dv14tqQfsAJDqujJfPx2Ivam+EWUjiYtzr3tWNhhq5YR4vg==", "first_name"=>"hfdhjd", "last_name"=>"jdhddhd", "description"=>"hjdjhdd", "email"=>"lmc@outlook.fr", "age"=>"45", "city"=>"jfjfjfjf", "zip_code"=>"751", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "commit"=>"Sign up"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lmc@outlook.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "created_at", "updated_at", "city_id", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "hfdhjd"], ["last_name", "jdhddhd"], ["description", "hjdjhdd"], ["email", "lmc@outlook.fr"], ["age", 45], ["created_at", "2021-05-13 17:41:23.694697"], ["updated_at", "2021-05-13 17:41:23.694697"], ["city_id", 27], ["password_digest", "$2a$12$FhJBgxx1O2xLMwlniyf/DuR8oT62UIcH.1AxV3gp9bp4b2VgPOkBK"]]
+  ↳ app/controllers/users_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:25
+Completed 500 Internal Server Error in 190ms (ActiveRecord: 3.9ms)
+
+
+  
+ActiveRecord::InvalidForeignKey (PG::ForeignKeyViolation: ERROR:  insert or update on table "users" violates foreign key constraint "fk_rails_9c7442481a"
+DETAIL:  Key (city_id)=(27) is not present in table "cities".
+: INSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "created_at", "updated_at", "city_id", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"):
+  
+app/controllers/users_controller.rb:25:in `create'
+Started POST "/users" for 127.0.0.1 at 2021-05-13 19:44:01 +0200
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/maxiapplepie/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fvSOF2vpxM7tpfEiexTiBwPcqqWAKKKVwQu+9h2Dv14tqQfsAJDqujJfPx2Ivam+EWUjiYtzr3tWNhhq5YR4vg==", "first_name"=>"hfdhjd", "last_name"=>"jdhddhd", "description"=>"hjdjhdd", "email"=>"lmc@outlook.fr", "age"=>"45", "city"=>"jfjfjfjf", "zip_code"=>"751", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "commit"=>"Sign up"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lmc@outlook.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "created_at", "updated_at", "city_id", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "hfdhjd"], ["last_name", "jdhddhd"], ["description", "hjdjhdd"], ["email", "lmc@outlook.fr"], ["age", 45], ["created_at", "2021-05-13 17:44:01.408895"], ["updated_at", "2021-05-13 17:44:01.408895"], ["city_id", 27], ["password_digest", "$2a$12$nPnBE2Eo/06Peh/WSwseAeqj5QwIDcylfz4BKUz69XNd7ZFHCCaLW"]]
+  ↳ app/controllers/users_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:25
+Completed 500 Internal Server Error in 210ms (ActiveRecord: 3.9ms)
+
+
+  
+ActiveRecord::InvalidForeignKey (PG::ForeignKeyViolation: ERROR:  insert or update on table "users" violates foreign key constraint "fk_rails_9c7442481a"
+DETAIL:  Key (city_id)=(27) is not present in table "cities".
+: INSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "created_at", "updated_at", "city_id", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"):
+  
+app/controllers/users_controller.rb:25:in `create'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mLinkGossipTag Load (0.5ms)[0m  [1m[34mSELECT "link_gossip_tags".* FROM "link_gossip_tags"[0m
+  ↳ db/seeds.rb:3
+  [1m[36mPrivateMessage Load (0.4ms)[0m  [1m[34mSELECT "private_messages".* FROM "private_messages"[0m
+  ↳ db/seeds.rb:4
+  [1m[36mTag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:5
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ db/seeds.rb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:7
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCity Create (0.4ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Humbertochester"], ["zip_code", "62803"], ["created_at", "2021-05-13 17:47:02.495290"], ["updated_at", "2021-05-13 17:47:02.495290"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Port Cletus"], ["zip_code", "22266-9807"], ["created_at", "2021-05-13 17:47:02.509848"], ["updated_at", "2021-05-13 17:47:02.509848"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Lake Robbiechester"], ["zip_code", "17337"], ["created_at", "2021-05-13 17:47:02.512908"], ["updated_at", "2021-05-13 17:47:02.512908"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Brittnyburgh"], ["zip_code", "70887"], ["created_at", "2021-05-13 17:47:02.515973"], ["updated_at", "2021-05-13 17:47:02.515973"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCity Create (0.3ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "East Earlenemouth"], ["zip_code", "32874"], ["created_at", "2021-05-13 17:47:02.519793"], ["updated_at", "2021-05-13 17:47:02.519793"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Jacobsburgh"], ["zip_code", "86841"], ["created_at", "2021-05-13 17:47:02.522895"], ["updated_at", "2021-05-13 17:47:02.522895"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Port Romeoton"], ["zip_code", "36359"], ["created_at", "2021-05-13 17:47:02.525916"], ["updated_at", "2021-05-13 17:47:02.525916"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Kuhicton"], ["zip_code", "87042"], ["created_at", "2021-05-13 17:47:02.528601"], ["updated_at", "2021-05-13 17:47:02.528601"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Turcottefurt"], ["zip_code", "17634-9685"], ["created_at", "2021-05-13 17:47:02.531749"], ["updated_at", "2021-05-13 17:47:02.531749"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Joyaberg"], ["zip_code", "59658-8699"], ["created_at", "2021-05-13 17:47:02.534613"], ["updated_at", "2021-05-13 17:47:02.534613"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mLinkGossipTag Load (0.4ms)[0m  [1m[34mSELECT "link_gossip_tags".* FROM "link_gossip_tags"[0m
+  ↳ db/seeds.rb:3
+  [1m[36mPrivateMessage Load (0.2ms)[0m  [1m[34mSELECT "private_messages".* FROM "private_messages"[0m
+  ↳ db/seeds.rb:4
+  [1m[36mTag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:5
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ db/seeds.rb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:7
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mCity Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cities" WHERE "cities"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:8
+  [1m[35m (24.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mCity Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cities" WHERE "cities"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:8
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mCity Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cities" WHERE "cities"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:8
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mCity Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cities" WHERE "cities"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:8
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mCity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cities" WHERE "cities"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:8
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mCity Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cities" WHERE "cities"."id" = $1[0m  [["id", 6]]
+  ↳ db/seeds.rb:8
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mCity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cities" WHERE "cities"."id" = $1[0m  [["id", 7]]
+  ↳ db/seeds.rb:8
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mCity Destroy (0.1ms)[0m  [1m[31mDELETE FROM "cities" WHERE "cities"."id" = $1[0m  [["id", 8]]
+  ↳ db/seeds.rb:8
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mCity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cities" WHERE "cities"."id" = $1[0m  [["id", 9]]
+  ↳ db/seeds.rb:8
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mCity Destroy (0.1ms)[0m  [1m[31mDELETE FROM "cities" WHERE "cities"."id" = $1[0m  [["id", 10]]
+  ↳ db/seeds.rb:8
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCity Create (0.3ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Port Roxannborough"], ["zip_code", "29175"], ["created_at", "2021-05-13 17:48:28.047497"], ["updated_at", "2021-05-13 17:48:28.047497"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "West Louchester"], ["zip_code", "37214"], ["created_at", "2021-05-13 17:48:28.051801"], ["updated_at", "2021-05-13 17:48:28.051801"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Waelchistad"], ["zip_code", "66059"], ["created_at", "2021-05-13 17:48:28.054453"], ["updated_at", "2021-05-13 17:48:28.054453"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCity Create (0.1ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "East Renee"], ["zip_code", "69289"], ["created_at", "2021-05-13 17:48:28.057227"], ["updated_at", "2021-05-13 17:48:28.057227"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCity Create (0.1ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Caseyfurt"], ["zip_code", "98622-2290"], ["created_at", "2021-05-13 17:48:28.059841"], ["updated_at", "2021-05-13 17:48:28.059841"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCity Create (0.1ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Wymanstad"], ["zip_code", "23238-4203"], ["created_at", "2021-05-13 17:48:28.062486"], ["updated_at", "2021-05-13 17:48:28.062486"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Lake Angeloborough"], ["zip_code", "15523-1014"], ["created_at", "2021-05-13 17:48:28.065341"], ["updated_at", "2021-05-13 17:48:28.065341"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCity Create (0.1ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pabloberg"], ["zip_code", "55497"], ["created_at", "2021-05-13 17:48:28.068460"], ["updated_at", "2021-05-13 17:48:28.068460"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCity Create (0.3ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Asatown"], ["zip_code", "03567"], ["created_at", "2021-05-13 17:48:28.071317"], ["updated_at", "2021-05-13 17:48:28.071317"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "North Joline"], ["zip_code", "42043-1597"], ["created_at", "2021-05-13 17:48:28.074432"], ["updated_at", "2021-05-13 17:48:28.074432"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "created_at", "updated_at", "city_id", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "anonymous"], ["last_name", "McCullough"], ["description", "This above all: to thine own self be true, and it must follow, as the night the day, thou canst not then be false to any man."], ["email", "lynwood@macejkovic-abernathy.com"], ["age", 26], ["created_at", "2021-05-13 17:48:28.258749"], ["updated_at", "2021-05-13 17:48:28.258749"], ["city_id", 13], ["password_digest", "$2a$12$c/9TFd7TfTuwV5oi/2OMXuO8ZbGwZnBUXCdMPw1L8WwJ6VZD.bQVK"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "created_at", "updated_at", "city_id", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Lahoma"], ["last_name", "Anderson"], ["description", "This above all: to thine own self be true, and it must follow, as the night the day, thou canst not then be false to any man."], ["email", "kip_reinger@glover-heaney.co"], ["age", 22], ["created_at", "2021-05-13 17:48:28.440717"], ["updated_at", "2021-05-13 17:48:28.440717"], ["city_id", 20], ["password_digest", "$2a$12$6/lve3GxKCn.xdndMTAjXOr3GPv.a.cz/P9zRARGIOr4ISP1NVqHW"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "created_at", "updated_at", "city_id", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Armando"], ["last_name", "Yost"], ["description", "The lady doth protest too much, methinks."], ["email", "rigoberto@torphy.co"], ["age", 45], ["created_at", "2021-05-13 17:48:28.624137"], ["updated_at", "2021-05-13 17:48:28.624137"], ["city_id", 18], ["password_digest", "$2a$12$B8LztVdbTxTWQ.hiYYiSI.jj5Urkrzu4///hvSwrSLLQtQTgrro/S"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "created_at", "updated_at", "city_id", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Cyril"], ["last_name", "Schaefer"], ["description", "Neither a borrower nor a lender be; For loan oft loses both itself and friend, and borrowing dulls the edge of husbandry."], ["email", "beau.schumm@brakus.co"], ["age", 50], ["created_at", "2021-05-13 17:48:28.806037"], ["updated_at", "2021-05-13 17:48:28.806037"], ["city_id", 19], ["password_digest", "$2a$12$YNHDW/bgb2Jz/VlxUU4JRu4/YIKOYAZ78/YN4MZDSIFXQjPjh8bg6"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "created_at", "updated_at", "city_id", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Clemente"], ["last_name", "Muller"], ["description", "Brevity is the soul of wit."], ["email", "brock@watsica-greenholt.org"], ["age", 63], ["created_at", "2021-05-13 17:48:28.987483"], ["updated_at", "2021-05-13 17:48:28.987483"], ["city_id", 13], ["password_digest", "$2a$12$JwMIXINuGPpgDwp4XMDZw.y9.bMpRD1CjmOlc9IRzhq53kyzmCMcq"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "created_at", "updated_at", "city_id", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Genny"], ["last_name", "Adams"], ["description", "A little more than kin, and less than kind."], ["email", "erin@krajcik.co"], ["age", 36], ["created_at", "2021-05-13 17:48:29.169507"], ["updated_at", "2021-05-13 17:48:29.169507"], ["city_id", 14], ["password_digest", "$2a$12$Uq9bZlbArFHsIv3rj.O8D.DcFuJ8N3tH2Aam9m8tTziFrKuOhXw3m"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "created_at", "updated_at", "city_id", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Magdalen"], ["last_name", "Shields"], ["description", "That it should come to this!"], ["email", "alec_sanford@wolff.biz"], ["age", 28], ["created_at", "2021-05-13 17:48:29.353187"], ["updated_at", "2021-05-13 17:48:29.353187"], ["city_id", 19], ["password_digest", "$2a$12$CUeSDrVytftbqCbUPSmLj.JSxsbt78Gso2Hya7wwf95pWIRY/QWCq"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "created_at", "updated_at", "city_id", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Louanne"], ["last_name", "Schmeler"], ["description", "To be, or not to be, that is the question"], ["email", "madalene@mcdermott.info"], ["age", 57], ["created_at", "2021-05-13 17:48:29.542131"], ["updated_at", "2021-05-13 17:48:29.542131"], ["city_id", 20], ["password_digest", "$2a$12$JDA74YbY.WDreuRffdc.JOA24xxFoGbSTxzzs6bQ.j4XzM/tFJgjm"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "created_at", "updated_at", "city_id", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Leida"], ["last_name", "Strosin"], ["description", "There is nothing either good or bad, but thinking makes it so."], ["email", "august@nolan-macgyver.co"], ["age", 60], ["created_at", "2021-05-13 17:48:29.724927"], ["updated_at", "2021-05-13 17:48:29.724927"], ["city_id", 14], ["password_digest", "$2a$12$JWcMhgpEQxntib4xfLh9kOSMW3A1P2CskHsQjKBUivy3A5sQOtan6"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "created_at", "updated_at", "city_id", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Cheyenne"], ["last_name", "Cremin"], ["description", "What a piece of work is man! How noble in reason, how infinite in faculty! In form and moving how express and admirable! In action how like an angel, in apprehension how like a god! The beauty of the world. The paragon of animals."], ["email", "raymond@upton.io"], ["age", 33], ["created_at", "2021-05-13 17:48:29.906413"], ["updated_at", "2021-05-13 17:48:29.906413"], ["city_id", 14], ["password_digest", "$2a$12$I4jyQUg4czLhuLeLAVwtgOLWBDkeQjeBl.yT/m93ZnTtS503rg/EG"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "created_at", "updated_at", "city_id", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Lesley"], ["last_name", "Kemmer"], ["description", "Brevity is the soul of wit."], ["email", "christy_kassulke@kovacek.name"], ["age", 43], ["created_at", "2021-05-13 17:48:30.086908"], ["updated_at", "2021-05-13 17:48:30.086908"], ["city_id", 16], ["password_digest", "$2a$12$QaT.MeQ.ETPrYKJPI460.ucg1eLVdOARaqarkcxoQus4oCZ.uGJsS"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mGossip Create (0.5ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Wrecking Ball"], ["content", "My ultimate is almost ready"], ["created_at", "2021-05-13 17:48:30.102870"], ["updated_at", "2021-05-13 17:48:30.102870"], ["user_id", 3]]
+  ↳ db/seeds.rb:41
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mGossip Create (0.3ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sigma"], ["content", "Here I am"], ["created_at", "2021-05-13 17:48:30.109260"], ["updated_at", "2021-05-13 17:48:30.109260"], ["user_id", 10]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mGossip Create (0.2ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Soldier 76"], ["content", "Kamai Tachi"], ["created_at", "2021-05-13 17:48:30.113445"], ["updated_at", "2021-05-13 17:48:30.113445"], ["user_id", 5]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mGossip Create (0.3ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Zenyatta"], ["content", "Take the objective!"], ["created_at", "2021-05-13 17:48:30.117744"], ["updated_at", "2021-05-13 17:48:30.117744"], ["user_id", 11]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mGossip Create (0.2ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "McCree"], ["content", "Barrier destroyed."], ["created_at", "2021-05-13 17:48:30.122537"], ["updated_at", "2021-05-13 17:48:30.122537"], ["user_id", 4]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mGossip Create (0.2ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Mei"], ["content", "How unsightly"], ["created_at", "2021-05-13 17:48:30.126860"], ["updated_at", "2021-05-13 17:48:30.126860"], ["user_id", 13]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mGossip Create (0.2ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Doomfist"], ["content", "Sorry, cap!"], ["created_at", "2021-05-13 17:48:30.130952"], ["updated_at", "2021-05-13 17:48:30.130952"], ["user_id", 11]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mGossip Create (0.3ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Pharah"], ["content", "so predictable tracer"], ["created_at", "2021-05-13 17:48:30.134956"], ["updated_at", "2021-05-13 17:48:30.134956"], ["user_id", 3]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mGossip Create (0.2ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sombra"], ["content", "Respawn - The Grave Cannot Hold Me"], ["created_at", "2021-05-13 17:48:30.139310"], ["updated_at", "2021-05-13 17:48:30.139310"], ["user_id", 13]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mGossip Create (0.2ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Reinhardt"], ["content", "Locking down the objective"], ["created_at", "2021-05-13 17:48:30.142922"], ["updated_at", "2021-05-13 17:48:30.142922"], ["user_id", 11]]
+  ↳ db/seeds.rb:41
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mGossip Create (0.5ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Ana"], ["content", "Ejecting"], ["created_at", "2021-05-13 17:48:30.150211"], ["updated_at", "2021-05-13 17:48:30.150211"], ["user_id", 12]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mGossip Create (0.3ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Symmetra"], ["content", "The enemy possesses a teleporter"], ["created_at", "2021-05-13 17:48:30.154876"], ["updated_at", "2021-05-13 17:48:30.154876"], ["user_id", 13]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mGossip Create (0.2ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Winston"], ["content", "An unexpected but not unwelcome development"], ["created_at", "2021-05-13 17:48:30.159243"], ["updated_at", "2021-05-13 17:48:30.159243"], ["user_id", 7]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mGossip Create (0.2ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Reinhardt"], ["content", "No one likes a thief"], ["created_at", "2021-05-13 17:48:30.163252"], ["updated_at", "2021-05-13 17:48:30.163252"], ["user_id", 7]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mGossip Create (0.2ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Junkrat"], ["content", "Our objective is under attack"], ["created_at", "2021-05-13 17:48:30.166940"], ["updated_at", "2021-05-13 17:48:30.166940"], ["user_id", 6]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mGossip Create (0.2ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Ashe"], ["content", "A repeat of our past performance"], ["created_at", "2021-05-13 17:48:30.170852"], ["updated_at", "2021-05-13 17:48:30.170852"], ["user_id", 13]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mGossip Create (0.2ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "D.va"], ["content", "Form up"], ["created_at", "2021-05-13 17:48:30.174448"], ["updated_at", "2021-05-13 17:48:30.174448"], ["user_id", 8]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mGossip Create (0.2ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Brigitte"], ["content", "I need armor"], ["created_at", "2021-05-13 17:48:30.178298"], ["updated_at", "2021-05-13 17:48:30.178298"], ["user_id", 13]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mGossip Create (0.3ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Winston"], ["content", "Huy! Que Miedo!.flac"], ["created_at", "2021-05-13 17:48:30.181986"], ["updated_at", "2021-05-13 17:48:30.181986"], ["user_id", 13]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mGossip Create (0.2ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Pharah"], ["content", "Oh, you look tired"], ["created_at", "2021-05-13 17:48:30.185916"], ["updated_at", "2021-05-13 17:48:30.185916"], ["user_id", 3]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[36mTag Create (0.3ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Possession"], ["created_at", "2021-05-13 17:48:30.191461"], ["updated_at", "2021-05-13 17:48:30.191461"]]
+  ↳ db/seeds.rb:49
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[36mTag Create (0.2ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Substance Secretion"], ["created_at", "2021-05-13 17:48:30.194393"], ["updated_at", "2021-05-13 17:48:30.194393"]]
+  ↳ db/seeds.rb:49
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[36mTag Create (0.2ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Reality Warping"], ["created_at", "2021-05-13 17:48:30.196985"], ["updated_at", "2021-05-13 17:48:30.196985"]]
+  ↳ db/seeds.rb:49
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[36mTag Create (0.3ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Energy Manipulation"], ["created_at", "2021-05-13 17:48:30.200242"], ["updated_at", "2021-05-13 17:48:30.200242"]]
+  ↳ db/seeds.rb:49
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[36mTag Create (0.2ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Vision - Night"], ["created_at", "2021-05-13 17:48:30.203057"], ["updated_at", "2021-05-13 17:48:30.203057"]]
+  ↳ db/seeds.rb:49
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[36mTag Create (0.2ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Wishing"], ["created_at", "2021-05-13 17:48:30.205692"], ["updated_at", "2021-05-13 17:48:30.205692"]]
+  ↳ db/seeds.rb:49
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[36mTag Create (0.2ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Astral Projection"], ["created_at", "2021-05-13 17:48:30.208251"], ["updated_at", "2021-05-13 17:48:30.208251"]]
+  ↳ db/seeds.rb:49
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[36mTag Create (0.2ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Geokinesis"], ["created_at", "2021-05-13 17:48:30.210811"], ["updated_at", "2021-05-13 17:48:30.210811"]]
+  ↳ db/seeds.rb:49
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[36mTag Create (0.2ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Death Touch"], ["created_at", "2021-05-13 17:48:30.213412"], ["updated_at", "2021-05-13 17:48:30.213412"]]
+  ↳ db/seeds.rb:49
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[36mTag Create (0.2ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Chlorokinesis"], ["created_at", "2021-05-13 17:48:30.216146"], ["updated_at", "2021-05-13 17:48:30.216146"]]
+  ↳ db/seeds.rb:49
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+  [1m[36mGossip Load (0.2ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:53
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:53
+  [1m[36mGossip Load (0.1ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:53
+  [1m[36mLinkGossipTag Create (0.4ms)[0m  [1m[32mINSERT INTO "link_gossip_tags" ("created_at", "updated_at", "tag_id", "gossip_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2021-05-13 17:48:30.225307"], ["updated_at", "2021-05-13 17:48:30.225307"], ["tag_id", 1], ["gossip_id", 4]]
+  ↳ db/seeds.rb:53
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:53
+  [1m[36mGossip Load (0.2ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:53
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:53
+  [1m[36mGossip Load (0.1ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:53
+  [1m[36mLinkGossipTag Create (0.2ms)[0m  [1m[32mINSERT INTO "link_gossip_tags" ("created_at", "updated_at", "tag_id", "gossip_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2021-05-13 17:48:30.230390"], ["updated_at", "2021-05-13 17:48:30.230390"], ["tag_id", 4], ["gossip_id", 13]]
+  ↳ db/seeds.rb:53
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:53
+  [1m[36mGossip Load (0.1ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:53
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:53
+  [1m[36mGossip Load (0.1ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:53
+  [1m[36mLinkGossipTag Create (0.2ms)[0m  [1m[32mINSERT INTO "link_gossip_tags" ("created_at", "updated_at", "tag_id", "gossip_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2021-05-13 17:48:30.234913"], ["updated_at", "2021-05-13 17:48:30.234913"], ["tag_id", 9], ["gossip_id", 14]]
+  ↳ db/seeds.rb:53
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:53
+  [1m[36mGossip Load (0.1ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:53
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:53
+  [1m[36mGossip Load (0.1ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:53
+  [1m[36mLinkGossipTag Create (0.2ms)[0m  [1m[32mINSERT INTO "link_gossip_tags" ("created_at", "updated_at", "tag_id", "gossip_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2021-05-13 17:48:30.239260"], ["updated_at", "2021-05-13 17:48:30.239260"], ["tag_id", 7], ["gossip_id", 2]]
+  ↳ db/seeds.rb:53
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:53
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:53
+  [1m[36mTag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:53
+  [1m[36mGossip Load (0.1ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:53
+  [1m[36mLinkGossipTag Create (0.3ms)[0m  [1m[32mINSERT INTO "link_gossip_tags" ("created_at", "updated_at", "tag_id", "gossip_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2021-05-13 17:48:30.251779"], ["updated_at", "2021-05-13 17:48:30.251779"], ["tag_id", 1], ["gossip_id", 15]]
+  ↳ db/seeds.rb:53
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:53
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:53
+  [1m[36mTag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:53
+  [1m[36mGossip Load (0.2ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:53
+  [1m[36mLinkGossipTag Create (0.3ms)[0m  [1m[32mINSERT INTO "link_gossip_tags" ("created_at", "updated_at", "tag_id", "gossip_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2021-05-13 17:48:30.257519"], ["updated_at", "2021-05-13 17:48:30.257519"], ["tag_id", 9], ["gossip_id", 3]]
+  ↳ db/seeds.rb:53
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:53
+  [1m[36mGossip Load (0.2ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:53
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:53
+  [1m[36mGossip Load (0.1ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:53
+  [1m[36mLinkGossipTag Create (0.2ms)[0m  [1m[32mINSERT INTO "link_gossip_tags" ("created_at", "updated_at", "tag_id", "gossip_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2021-05-13 17:48:30.262376"], ["updated_at", "2021-05-13 17:48:30.262376"], ["tag_id", 2], ["gossip_id", 7]]
+  ↳ db/seeds.rb:53
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:53
+  [1m[36mGossip Load (0.1ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:53
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:53
+  [1m[36mGossip Load (0.1ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:53
+  [1m[36mLinkGossipTag Create (0.4ms)[0m  [1m[32mINSERT INTO "link_gossip_tags" ("created_at", "updated_at", "tag_id", "gossip_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2021-05-13 17:48:30.266831"], ["updated_at", "2021-05-13 17:48:30.266831"], ["tag_id", 8], ["gossip_id", 8]]
+  ↳ db/seeds.rb:53
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:53
+  [1m[36mGossip Load (0.2ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mTag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:53
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:53
+  [1m[36mGossip Load (0.1ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:53
+  [1m[36mLinkGossipTag Create (0.2ms)[0m  [1m[32mINSERT INTO "link_gossip_tags" ("created_at", "updated_at", "tag_id", "gossip_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2021-05-13 17:48:30.272289"], ["updated_at", "2021-05-13 17:48:30.272289"], ["tag_id", 7], ["gossip_id", 16]]
+  ↳ db/seeds.rb:53
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:53
+  [1m[36mGossip Load (0.1ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ db/seeds.rb:54
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:53
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:53
+  [1m[36mGossip Load (0.1ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ db/seeds.rb:53
+  [1m[36mLinkGossipTag Create (0.2ms)[0m  [1m[32mINSERT INTO "link_gossip_tags" ("created_at", "updated_at", "tag_id", "gossip_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2021-05-13 17:48:30.276894"], ["updated_at", "2021-05-13 17:48:30.276894"], ["tag_id", 6], ["gossip_id", 18]]
+  ↳ db/seeds.rb:53
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:53
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:62
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ db/seeds.rb:60
+  [1m[36mPrivateMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "created_at", "updated_at", "recipient_id", "sender_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "Now, witness the power of this fully operational battle station."], ["created_at", "2021-05-13 17:48:30.286111"], ["updated_at", "2021-05-13 17:48:30.286111"], ["recipient_id", 12], ["sender_id", 9]]
+  ↳ db/seeds.rb:60
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:62
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:60
+  [1m[36mPrivateMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "created_at", "updated_at", "recipient_id", "sender_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "It's a trap!"], ["created_at", "2021-05-13 17:48:30.291870"], ["updated_at", "2021-05-13 17:48:30.291870"], ["recipient_id", 6], ["sender_id", 12]]
+  ↳ db/seeds.rb:60
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:62
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:60
+  [1m[36mPrivateMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "created_at", "updated_at", "recipient_id", "sender_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "Once something is known, it cannot be unknown."], ["created_at", "2021-05-13 17:48:30.297129"], ["updated_at", "2021-05-13 17:48:30.297129"], ["recipient_id", 7], ["sender_id", 11]]
+  ↳ db/seeds.rb:60
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:62
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:60
+  [1m[36mPrivateMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "created_at", "updated_at", "recipient_id", "sender_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "Why you slimy, double-crossing, no-good swindler. You've got a lot of guts coming here, after what you pulled."], ["created_at", "2021-05-13 17:48:30.302284"], ["updated_at", "2021-05-13 17:48:30.302284"], ["recipient_id", 8], ["sender_id", 12]]
+  ↳ db/seeds.rb:60
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:62
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ db/seeds.rb:60
+  [1m[36mPrivateMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "created_at", "updated_at", "recipient_id", "sender_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "Would somebody get this big walking carpet out of my way?"], ["created_at", "2021-05-13 17:48:30.307107"], ["updated_at", "2021-05-13 17:48:30.307107"], ["recipient_id", 12], ["sender_id", 8]]
+  ↳ db/seeds.rb:60
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:62
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:60
+  [1m[36mPrivateMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "created_at", "updated_at", "recipient_id", "sender_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "I will start my operations here, and pull the rebels apart piece by piece. They'll be the architects of their own destruction."], ["created_at", "2021-05-13 17:48:30.312294"], ["updated_at", "2021-05-13 17:48:30.312294"], ["recipient_id", 7], ["sender_id", 6]]
+  ↳ db/seeds.rb:60
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:62
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:60
+  [1m[36mPrivateMessage Create (0.2ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "created_at", "updated_at", "recipient_id", "sender_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "So this is how liberty dies. With thunderous applause."], ["created_at", "2021-05-13 17:48:30.317156"], ["updated_at", "2021-05-13 17:48:30.317156"], ["recipient_id", 10], ["sender_id", 3]]
+  ↳ db/seeds.rb:60
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:62
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:60
+  [1m[36mPrivateMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "created_at", "updated_at", "recipient_id", "sender_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "Boompa kom bok nee aht am bompah. (He may only take your ship.)"], ["created_at", "2021-05-13 17:48:30.322409"], ["updated_at", "2021-05-13 17:48:30.322409"], ["recipient_id", 4], ["sender_id", 4]]
+  ↳ db/seeds.rb:60
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:62
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:60
+  [1m[36mPrivateMessage Create (0.2ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "created_at", "updated_at", "recipient_id", "sender_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "You have failed me for the last time, Admiral."], ["created_at", "2021-05-13 17:48:30.327673"], ["updated_at", "2021-05-13 17:48:30.327673"], ["recipient_id", 8], ["sender_id", 13]]
+  ↳ db/seeds.rb:60
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:62
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:60
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:60
+  [1m[36mPrivateMessage Create (0.2ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "created_at", "updated_at", "recipient_id", "sender_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "Ani? My goodness, you've grown."], ["created_at", "2021-05-13 17:48:30.335363"], ["updated_at", "2021-05-13 17:48:30.335363"], ["recipient_id", 6], ["sender_id", 5]]
+  ↳ db/seeds.rb:60
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:60
+Started GET "/" for 127.0.0.1 at 2021-05-13 19:48:59 +0200
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/maxiapplepie/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/static/index.html.erb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  Rendered static/index.html.erb within layouts/application (52.8ms)
+Completed 200 OK in 167ms (Views: 151.9ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2021-05-13 19:49:01 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2021-05-13 19:49:06 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-05-13 19:49:23 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L9g9Z6lde/I61pBYnb6OiOOH9jV9fsSLnmKkMf344Xp8hbScwiRVhuUsXmduF8Ux8T5/GXYlyWUJXwKtBf8mmg==", "first_name"=>"hfdhjd", "last_name"=>"jdhddhd", "description"=>"jkffk", "email"=>"lmc@outlook.fr", "age"=>"45", "city"=>"jfjfjfjf", "zip_code"=>"751", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "commit"=>"Sign up"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lmc@outlook.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/controllers/users_controller.rb:22
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "created_at", "updated_at", "city_id", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "hfdhjd"], ["last_name", "jdhddhd"], ["description", "jkffk"], ["email", "lmc@outlook.fr"], ["age", 45], ["created_at", "2021-05-13 17:49:23.253683"], ["updated_at", "2021-05-13 17:49:23.253683"], ["city_id", 13], ["password_digest", "$2a$12$KpFSEkN52Kj/W9IBR4QmC.g5iOGqz28t2E4OIddr6DsdwMG6Uhc1q"]]
+  ↳ app/controllers/users_controller.rb:25
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:25
+Redirected to http://localhost:3000/index
+Completed 302 Found in 192ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2021-05-13 19:49:23 +0200
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.2ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/static/index.html.erb:15
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  Rendered static/index.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 27ms (Views: 24.3ms | ActiveRecord: 1.9ms)
+
+
+Started DELETE "/sessions/14" for 127.0.0.1 at 2021-05-13 19:49:27 +0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cXq5Aa4Fmzuoebw4Mp+6e+7XAv2fwsTKn9eV9DpS0jQiJzD6xXy1T3eDcgfBNvHC/G6L0ZSZySQI6jNowlUV1A==", "id"=>"14"}
+Redirected to http://localhost:3000/index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2021-05-13 19:49:27 +0200
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/static/index.html.erb:15
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  Rendered static/index.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2021-05-13 19:49:29 +0200
+Processing by StaticController#contact as HTML
+  Rendering static/contact.html.erb within layouts/application
+  Rendered static/contact.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2021-05-13 19:49:31 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2021-05-13 19:49:34 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C6WITDiJw9AMz35prKJ8f2VbipjUbYi3YkwL2K1E0xlY+AG3U/DtpNM1sFZfCzfGd+IDtN82hVn1ca1EVUMU+Q==", "email"=>"lmc@outlook.fr", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lmc@outlook.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/welcome/:first_name
+Completed 302 Found in 186ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/welcome/:first_name" for 127.0.0.1 at 2021-05-13 19:49:34 +0200
+Processing by StaticController#welcome as HTML
+  Parameters: {"user"=>":first_name"}
+  Rendering static/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  Rendered static/welcome.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-05-14 09:41:47 +0200
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+):
+  
+pg (1.2.3) lib/pg.rb:58:in `initialize'
+pg (1.2.3) lib/pg.rb:58:in `new'
+pg (1.2.3) lib/pg.rb:58:in `connect'
+activerecord (5.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:692:in `connect'
+activerecord (5.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+activerecord (5.2.6) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.6) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.6) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2021-05-14 11:13:08 +0200
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+):
+  
+pg (1.2.3) lib/pg.rb:58:in `initialize'
+pg (1.2.3) lib/pg.rb:58:in `new'
+pg (1.2.3) lib/pg.rb:58:in `connect'
+activerecord (5.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:692:in `connect'
+activerecord (5.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+activerecord (5.2.6) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.6) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.6) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2021-05-14 11:15:16 +0200
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+):
+  
+pg (1.2.3) lib/pg.rb:58:in `initialize'
+pg (1.2.3) lib/pg.rb:58:in `new'
+pg (1.2.3) lib/pg.rb:58:in `connect'
+activerecord (5.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:692:in `connect'
+activerecord (5.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+activerecord (5.2.6) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.6) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.6) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2021-05-14 11:17:07 +0200
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+):
+  
+pg (1.2.3) lib/pg.rb:58:in `initialize'
+pg (1.2.3) lib/pg.rb:58:in `new'
+pg (1.2.3) lib/pg.rb:58:in `connect'
+activerecord (5.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:692:in `connect'
+activerecord (5.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+activerecord (5.2.6) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.6) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.6) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2021-05-14 11:21:14 +0200
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+):
+  
+pg (1.2.3) lib/pg.rb:58:in `initialize'
+pg (1.2.3) lib/pg.rb:58:in `new'
+pg (1.2.3) lib/pg.rb:58:in `connect'
+activerecord (5.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:692:in `connect'
+activerecord (5.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+activerecord (5.2.6) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.6) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.6) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2021-05-14 11:30:39 +0200
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/maxiapplepie/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mGossip Load (2.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/static/index.html.erb:15
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/static/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  Rendered static/index.html.erb within layouts/application (56.7ms)
+Completed 200 OK in 181ms (Views: 160.6ms | ActiveRecord: 10.0ms)
+
+

@@ -21,22 +21,9 @@ end
     email: Faker::Internet.email,
     age: Faker::Number.within(range: 18..70),
     city_id: City.all.sample.id,
-  )
+    password: "ljhmh",
+    )
 end
-
-User.create!(first_name: "LAURENT", last_name: "MOLLARD-CHAUMETTE", description: "gfgfgkfkffjkgfj", email: "LMC@OUTLOOK.FR", age: 52, city_id: 21, password_digest: 'klhjgglljkgkl') 
-User.create!(
-  first_name: "LAURENT",
-  last_name: "MOLLARD-CHAUMETTE",
-  description: "gfgfgkfkffjkgfj",
-  email: "LMC@OUTLOOK.FR",
-  age: 52,
-  city_id: 21
-
-  City.find_by(name: params[:city]).id
-
-"utf8"=>"✓", "authenticity_token"=>"HVqNBihmsLzDO+faz4BcwWPSNGbtLXldXFqdIGrXvNffnijrN61pAYvztr7ZQ6VDmDrk3mTCHtabDC0KD4J6fw==", "first_name"=>"LAURENT", "last_name"=>"MOLLARD-CHAUMETTE", "description"=>"gfgfgkfkffjkgfj", "email"=>"LMC@OUTLOOK.FR", "age"=>"52", "city"=>"CHIROLS", "zip_code"=>"07380", "password"=>"tututu", "password_confirmation"=>"tututu", "commit"=>"Sign up", "controller"=>"users", "action"=>"create"}
-
 
 10.times do
   User.create!(
@@ -46,6 +33,7 @@ User.create!(
     email: Faker::Internet.email,
     age: Faker::Number.within(range: 18..70),
     city_id: City.all.sample.id,
+    password: "ljhmh",
   )
 end
 
